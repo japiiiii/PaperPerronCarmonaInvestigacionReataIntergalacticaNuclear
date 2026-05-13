@@ -1,0 +1,308 @@
+\documentclass[review]{elsarticle}
+
+% =========================
+% Language and encoding
+% =========================
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{csquotes}
+\usepackage{multirow}
+
+% =========================
+% Useful packages
+% =========================
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\usepackage{hyperref}
+
+% =========================
+% Author–year citations
+% =========================
+\biboptions{authoryear}
+
+\journal{Revista de Educación Superior}
+
+% =========================
+% Bibliografía externa
+% =========================
+\bibliographystyle{elsarticle-harv}
+
+\begin{document}
+	
+	% =========================
+	% FRONTMATTER
+	% =========================
+	\begin{frontmatter}
+		
+		\title{Riesgos Éticos y Técnicos del Uso de Modelos Generativos de Inteligencia Artificial en la Educación Superior}
+		
+		\author[1]{Daniel Alexander Estrada Cosio}
+		\author[1]{Carlos Omar Celis Calzada}
+		\author[1]{Joab Alejandro Rubio Jerez}
+		\affiliation[1]{organization={Tecnológico Nacional de México, Campus La Paz},
+			city={La Paz, B.C.S.},
+			country={México}}
+		
+		\begin{abstract}
+			The accelerated expansion of generative artificial intelligence models, such as ChatGPT\textsuperscript{\textregistered}, Gemini\textsuperscript{\textregistered} and Claude\textsuperscript{\textregistered}, has been identified as one of the most significant technological transformations of the last decade in higher education. This study presents a systematic documentary analysis of the ethical and technical risks associated with the unregulated use of these models in higher education, with special attention to the context of the Tecnológico Nacional de México (TecNM) Campus La Paz. The academic literature published between 2020 and 2025 was examined, the TecNM Student Regulations were analyzed, and complementary data collection instruments were designed. The results reveal four main categories of ethical risks: academic plagiarism, diffuse authorship, cognitive dependence, and unequal access. Three main categories of technical risks are identified: algorithmic hallucinations, biases, and opacity. The institutional analysis shows that the TecNM Student Regulations contain no specific provisions on the use of generative AI tools, constituting a significant regulatory gap. The study concludes with preliminary guidelines for the responsible use of generative AI in higher education.
+		\end{abstract}
+		
+		\begin{keyword}
+			IA generativa \sep ética en educación \sep sesgos algorítmicos \sep dependencia cognitiva \sep plagio académico \sep gobernanza tecnológica
+		\end{keyword}
+		
+	\end{frontmatter}
+	
+	% =================================================
+	\section{Introducción}
+	
+	La expansión acelerada de los modelos generativos de inteligencia artificial (IA), tales como ChatGPT\textsuperscript{\textregistered}, Gemini\textsuperscript{\textregistered} y Claude\textsuperscript{\textregistered}, se identificó como una de las transformaciones tecnológicas más significativas de la última década en el ámbito de la educación superior. Se reconoció que estas herramientas se integraron en actividades académicas centrales, transformando la manera en que los estudiantes redactaron trabajos, resolvieron problemas, recibieron tutoría personalizada y crearon contenidos \citep{lim2024, yan2023}. No obstante, se observó que esta integración ocurrió, en la mayoría de los casos, sin que las instituciones educativas contaran con marcos normativos claros que orientaran su uso responsable, situación que generó interrogantes sobre la integridad académica, la formación cognitiva y la equidad en el acceso al conocimiento \citep{guzmanvaldivia2024}.
+	
+	El presente artículo sistematiza los hallazgos de una investigación cualitativa de tipo documental orientada a analizar los riesgos éticos y técnicos que el uso no regulado de estos modelos generó en la educación superior, con especial atención al contexto del Tecnológico Nacional de México (TecNM) Campus La Paz.
+	
+	\subsection{Contexto del problema}
+	
+	A nivel global, se identificó que el uso de modelos generativos de lenguaje de gran escala (LLM) se expandió exponencialmente a partir de 2022. En el ámbito universitario, esta adopción fue particularmente notable: estudiantes y docentes comenzaron a utilizar estas herramientas para redactar ensayos, generar código, resumir textos y resolver ejercicios académicos \citep{yan2023}. Organizaciones internacionales como la UNESCO \citep{unesco2021} y la OCDE \citep{oecd2019} reconocieron el potencial transformador de la IA, pero también advirtieron sobre sus implicaciones éticas y técnicas.
+	
+	En el contexto latinoamericano, \citet{ramirezchavez2025} señalaron que las universidades enfrentaron desafíos adicionales relacionados con las brechas digitales, la falta de formación docente en IA y la ausencia de criterios de evaluación adaptados. En el TecNM Campus La Paz, el Reglamento de Estudiantes \citep{tecnm2023} no contempló disposiciones específicas que regularan el uso de IA generativa, limitándose a prohibiciones generales sobre el plagio y la propiedad intelectual.
+	
+	\subsection{Pregunta de investigación}
+	
+	\textbf{Pregunta principal:} ¿Cómo afectaron los riesgos éticos y técnicos asociados al uso de modelos generativos en la educación superior, y qué acciones institucionales resultaron necesarias para garantizar un uso responsable?
+	
+	\subsection{Objetivos}
+	
+	\textbf{Objetivo general:} Analizar los riesgos éticos y técnicos generados por el uso de modelos de IA generativa en la educación superior.
+	
+	\textbf{Objetivos específicos:}
+	\begin{enumerate}
+		\item Identificar los principales riesgos éticos reportados en la literatura.
+		\item Describir los riesgos técnicos más relevantes documentados.
+		\item Revisar las respuestas institucionales actuales, con especial atención al Reglamento de Estudiantes del TecNM.
+		\item Proponer lineamientos para mitigar dichos riesgos.
+	\end{enumerate}
+	
+	% =================================================
+	\section{Marco Teórico}
+	
+	\subsection{Conceptos fundamentales}
+	
+	\textbf{Inteligencia Artificial Generativa:} Subárea de la IA enfocada en la creación automática de contenido nuevo a partir de modelos entrenados con grandes volúmenes de datos, utilizando arquitecturas Transformer \citep{vaswani2017}.
+	
+	\textbf{Modelos de Lenguaje de Gran Escala (LLM):} Sistemas de aprendizaje profundo entrenados con enormes corpus textuales que funcionan mediante predicción probabilística de secuencias lingüísticas, sin comprensión semántica real \citep{bender2021}.
+	
+	\textbf{Alucinaciones Algorítmicas:} Fenómeno mediante el cual un modelo generativo produce información incorrecta o inexistente presentada con coherencia lingüística \citep{yan2023}.
+	
+	\textbf{Sesgo Algorítmico:} Reproducción o amplificación de prejuicios presentes en los datos de entrenamiento \citep{bender2021}.
+	
+	\textbf{Dependencia Cognitiva:} Delegación excesiva de procesos intelectuales en herramientas tecnológicas, reduciendo la participación activa en la construcción del conocimiento \citep{guzmanvaldivia2024}.
+	
+	\subsection{Bases teóricas}
+	
+	\subsubsection{Fundamentos de la IA Generativa}
+	
+	Los modelos generativos actuales se fundamentaron en arquitecturas Transformer \citep{vaswani2017}, que utilizan mecanismos de atención para procesar grandes volúmenes de texto. Los LLM funcionan mediante predicción probabilística, lo que explica fenómenos como alucinaciones, reproducción de sesgos y opacidad \citep{bender2021, yan2023}.
+	
+	\subsubsection{Perspectiva pedagógica}
+	
+	Desde el constructivismo \citep{piaget1970} y la teoría sociocultural \citep{vygotsky1978}, el aprendizaje es un proceso activo de construcción del conocimiento. El uso excesivo de modelos generativos puede alterar estos procesos, promoviendo dependencia cognitiva y afectando el pensamiento crítico \citep{guzmanvaldivia2024, gallenttorres2023}.
+	
+	\subsubsection{Ética de la IA}
+	
+	La UNESCO \citep{unesco2021} estableció principios de equidad, explicabilidad y rendición de cuentas. La OCDE \citep{oecd2019} propuso cinco principios para una IA confiable. \citet{floridi2013} propuso una ética de la información basada en responsabilidad y transparencia.
+	
+	\subsection{Modelo conceptual}
+	
+	La Figura~\ref{fig:modelo} presenta el modelo conceptual que articula las tres categorías centrales de análisis: riesgos éticos, riesgos técnicos y respuestas institucionales.
+	
+	\begin{figure}[H]
+		\centering
+		\fbox{%
+			\begin{minipage}{0.88\textwidth}
+				\vspace{0.3cm}
+				\centering
+				\textbf{Modelos Generativos de IA en Educación Superior}\\[0.4cm]
+				\begin{tabular}{ccc}
+					\textbf{Riesgos Éticos} & $\longleftrightarrow$ & \textbf{Riesgos Técnicos}\\
+					(plagio, autoría difusa, & & (sesgos, alucinaciones,\\
+					dependencia cognitiva, & & opacidad)\\
+					desigualdad de acceso) & & \\[0.3cm]
+					\multicolumn{3}{c}{$\Downarrow$ \ \ $\Uparrow$}\\[0.2cm]
+					\multicolumn{3}{c}{\textbf{Respuestas Institucionales}}\\
+					\multicolumn{3}{c}{(políticas, normativas, programas de formación)}\\
+					\multicolumn{3}{c}{\textit{Caso de análisis: Reglamento TecNM (2023)}}
+				\end{tabular}
+				\vspace{0.3cm}
+			\end{minipage}%
+		}
+		\caption{Modelo conceptual del estudio: relaciones entre categorías de análisis.}
+		\label{fig:modelo}
+	\end{figure}
+	
+	% =================================================
+	\section{Metodología}
+	
+	\subsection{Enfoque de investigación}
+	
+	El estudio adoptó un \textbf{enfoque cualitativo} de tipo \textit{descriptivo-analítico} con diseño de \textit{investigación documental}. La información se obtuvo a partir de la revisión sistemática de literatura académica publicada entre 2020 y 2025, y del análisis del Reglamento de Estudiantes del TecNM \citep{tecnm2023}.
+	
+	\subsection{Categorías de análisis}
+	
+	La Tabla~\ref{tab:categorias} presenta las categorías y subcategorías de análisis.
+	
+	\begin{longtable}{p{3.2cm} p{3.6cm} p{5.6cm}}
+		\caption{Categorías y subcategorías de análisis}\label{tab:categorias}\\
+		\toprule
+		\textbf{Categoría} & \textbf{Subcategoría} & \textbf{Descripción} \\
+		\midrule
+		\endfirsthead
+		\toprule
+		\textbf{Categoría} & \textbf{Subcategoría} & \textbf{Descripción} \\
+		\midrule
+		\endhead
+		
+		\multirow{4}{3.2cm}{Riesgos éticos} & Plagio y autoría difusa & Presentación de contenido generado por IA como propio, autoría ambigua \\
+		\cmidrule{2-3}
+		& Dependencia cognitiva & Reducción del esfuerzo intelectual por delegación excesiva en IA \\
+		\cmidrule{2-3}
+		& Desigualdad de acceso & Diferencias en acceso a versiones avanzadas de herramientas de IA \\
+		\midrule
+		
+		\multirow{3}{3.2cm}{Riesgos técnicos} & Sesgos algorítmicos & Contenido discriminatorio o estereotipado por sesgos en datos de entrenamiento \\
+		\cmidrule{2-3}
+		& Alucinaciones algorítmicas & Información falsa presentada con apariencia de veracidad \\
+		\cmidrule{2-3}
+		& Opacidad & Limitaciones en la comprensión de los procesos internos de los modelos \\
+		\midrule
+		
+		\multirow{3}{3.2cm}{Respuestas institucionales} & Políticas y normativas & Disposiciones que regulan el uso de IA generativa \\
+		\cmidrule{2-3}
+		& Programas de formación & Capacitación sobre IA generativa para estudiantes y docentes \\
+		\cmidrule{2-3}
+		& Vacíos regulatorios & Ausencia de disposiciones específicas sobre IA generativa \\
+		
+		\bottomrule
+	\end{longtable}
+	
+	\subsection{Análisis del Reglamento del TecNM}
+	
+	Se aplicó una guía de análisis documental institucional al Reglamento de Estudiantes del TecNM \citep{tecnm2023}. La Tabla~\ref{tab:reganalisis} sistematiza los hallazgos.
+	
+	\begin{table}[H]
+		\centering
+		\caption{Análisis del Reglamento de Estudiantes del TecNM respecto al uso de IA generativa}
+		\label{tab:reganalisis}
+		\begin{tabularx}{\textwidth}{p{3.5cm} X p{2.5cm}}
+			\toprule
+			\textbf{Dimensión analizada} & \textbf{Hallazgo} & \textbf{Artículo} \\
+			\midrule
+			Disposición explícita sobre IA generativa & No existe ninguna disposición específica & Sin referencia \\
+			\midrule
+			Prohibición de plagio & Sí, de manera general, sin distinguir plagio por IA & Art. 7, Frac. XX \\
+			\midrule
+			Propiedad intelectual & Sí, sin especificar autoría difusa por IA & Art. 8, Frac. XVII \\
+			\midrule
+			Derecho de autoría del estudiante & Sí, sin marcos para coautoría con IA & Art. 6, Frac. XV \\
+			\midrule
+			Sanciones específicas por uso de IA & No existen sanciones específicas & Arts. 9--11 \\
+			\midrule
+			Programas de formación en IA & No se documentaron & Sin referencia \\
+			\bottomrule
+		\end{tabularx}
+	\end{table}
+	
+	% =================================================
+	\section{Resultados}
+	
+	\subsection{Riesgos éticos}
+	
+	Se identificaron cuatro categorías principales de riesgos éticos:
+	
+	\textbf{Plagio académico y autoría difusa.} El uso de modelos generativos propició la presentación de contenido generado automáticamente como producción intelectual propia \citep{gallenttorres2023}. La autoría difusa dificulta la atribución de responsabilidad intelectual \citep{gallenttorres2023, lim2024}.
+	
+	\textbf{Dependencia cognitiva.} El uso excesivo de modelos generativos puede sustituir procesos de elaboración cognitiva propios, inhibiendo el pensamiento crítico \citep{guzmanvaldivia2024}.
+	
+	\textbf{Desigualdad de acceso.} El acceso a versiones avanzadas no es homogéneo, generando ventajas diferenciadas y profundizando la brecha digital \citep{vandijk2006}.
+	
+	\subsection{Riesgos técnicos}
+	
+	\textbf{Alucinaciones algorítmicas.} Los LLM producen información incorrecta presentada con aparente veracidad \citep{yan2023, bender2021}.
+	
+	\textbf{Sesgos algorítmicos.} Los modelos reproducen y amplifican sesgos presentes en sus datos de entrenamiento \citep{bender2021}.
+	
+	\textbf{Opacidad de los modelos.} La falta de transparencia dificulta la evaluación de la confiabilidad del conocimiento generado \citep{floridi2013, unesco2021}.
+	
+	\subsection{Análisis del Reglamento del TecNM}
+	
+	El análisis reveló que el Reglamento \citep{tecnm2023} no contempla ninguna disposición específica sobre el uso de herramientas de IA generativa. Esta ausencia constituye el principal vacío normativo identificado.
+	
+	La Tabla~\ref{tab:trazabilidad} presenta la trazabilidad metodológica del estudio.
+	
+	\begin{longtable}{p{3.0cm} p{2.8cm} p{3.0cm} p{3.2cm}}
+		\caption{Tabla de trazabilidad metodológica}\label{tab:trazabilidad}\\
+		\toprule
+		\textbf{Objetivo específico} & \textbf{Categoría} & \textbf{Instrumento} & \textbf{Evidencia} \\
+		\midrule
+		\endfirsthead
+		\toprule
+		\textbf{Objetivo específico} & \textbf{Categoría} & \textbf{Instrumento} & \textbf{Evidencia} \\
+		\midrule
+		\endhead
+		
+		Identificar riesgos éticos & Riesgos éticos & Matriz documental & Tabla de hallazgos éticos \\
+		\midrule
+		Describir riesgos técnicos & Riesgos técnicos & Matriz documental & Tabla de hallazgos técnicos \\
+		\midrule
+		Revisar respuestas institucionales & Respuestas institucionales & Guía de análisis & Vacíos normativos \\
+		\midrule
+		Proponer lineamientos & Síntesis de categorías & Integración documental & Lineamientos propuestos \\
+		\bottomrule
+	\end{longtable}
+	
+	% =================================================
+	\section{Discusión}
+	
+	Los hallazgos evidencian que el uso de modelos generativos de IA en la educación superior genera una doble problemática interrelacionada: riesgos éticos que comprometen la integridad académica, y riesgos técnicos que afectan la confiabilidad del conocimiento generado.
+	
+	La dependencia cognitiva y el plagio no constituyen fenómenos independientes: la dependencia cognitiva predispone al estudiante a aceptar resultados del modelo sin procesamiento crítico, facilitando la incorporación de información incorrecta (alucinaciones) y el uso no declarado de contenido generado automáticamente.
+	
+	El análisis del Reglamento del TecNM permite identificar que la institución cuenta con instrumentos normativos que abordan el plagio de manera general, pero que no contemplan las especificidades del uso de IA generativa. Este vacío normativo refleja la velocidad con que estas tecnologías han irrumpido en el contexto educativo.
+	
+	% =================================================
+	\section{Conclusiones}
+	
+	\begin{enumerate}
+		\item El uso de modelos generativos de IA en la educación superior genera riesgos éticos significativos: plagio académico, autoría difusa, dependencia cognitiva y desigualdad de acceso.
+		
+		\item Los riesgos técnicos inherentes a los LLM (alucinaciones, sesgos y opacidad) afectan la confiabilidad del conocimiento generado.
+		
+		\item El Reglamento de Estudiantes del TecNM \citep{tecnm2023} no incorpora lineamientos específicos sobre IA generativa, configurando un vacío normativo que requiere atención prioritaria.
+	\end{enumerate}
+	
+	\subsection{Recomendaciones}
+	
+	\begin{enumerate}
+		\item Actualizar el Reglamento de Estudiantes del TecNM para incorporar disposiciones específicas sobre IA generativa.
+		\item Diseñar programas de alfabetización digital para uso crítico, ético y responsable de la IA.
+		\item Adaptar los criterios e instrumentos de evaluación docente para incorporar la posibilidad del uso de IA.
+	\end{enumerate}
+	
+	\subsection{Limitaciones}
+	
+	La revisión se delimitó al periodo 2020--2025. La encuesta diseñada se encuentra en proceso de aplicación. La velocidad de evolución tecnológica puede desactualizar algunos hallazgos.
+	
+	% =================================================
+	\section{Agradecimientos}
+	
+	Los autores agradecen al Dr. Javier Alberto Carmona Troyo por su asesoría durante el desarrollo de esta investigación.
+	
+	% =================================================
+	\bibliography{mybibfile.bib}
+	
+\end{document}

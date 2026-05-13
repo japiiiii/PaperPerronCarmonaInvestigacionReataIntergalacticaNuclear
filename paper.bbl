@@ -1,0 +1,108 @@
+\begin{thebibliography}{14}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Bender et~al.(2021)Bender, Gebru, McMillan-Major and
+  Shmitchell}]{bender2021}
+\bibinfo{author}{Bender, E.M.}, \bibinfo{author}{Gebru, T.},
+  \bibinfo{author}{McMillan-Major, A.}, \bibinfo{author}{Shmitchell, S.},
+  \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{On the dangers of stochastic parrots: Can language
+  models be too big?}
+\newblock \bibinfo{journal}{Proceedings of FAccT} , \bibinfo{pages}{610--623}.
+%Type = Article
+\bibitem[{van Dijk(2006)}]{vandijk2006}
+\bibinfo{author}{van Dijk, J.A.G.M.}, \bibinfo{year}{2006}.
+\newblock \bibinfo{title}{Digital divide research, achievements and
+  shortcomings}.
+\newblock \bibinfo{journal}{Poetics} \bibinfo{volume}{34},
+  \bibinfo{pages}{221--235}.
+%Type = Article
+\bibitem[{Floridi(2013)}]{floridi2013}
+\bibinfo{author}{Floridi, L.}, \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{The ethics of information}.
+\newblock \bibinfo{journal}{Oxford University Press} .
+%Type = Article
+\bibitem[{Gallent-Torres(2023)}]{gallenttorres2023}
+\bibinfo{author}{Gallent-Torres, C.}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{El impacto de la ia generativa desde una perspectiva
+  ética en la educación superior}.
+\newblock \bibinfo{journal}{Revista de Educación} \bibinfo{volume}{401},
+  \bibinfo{pages}{89--114}.
+%Type = Article
+\bibitem[{Guzmán-Valdivia(2024)}]{guzmanvaldivia2024}
+\bibinfo{author}{Guzmán-Valdivia, C.H.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Impacto de chatgpt en la educación superior:
+  oportunidades y riesgos}.
+\newblock \bibinfo{journal}{Revista Iberoamericana de Educación}
+  \bibinfo{volume}{94}, \bibinfo{pages}{45--62}.
+%Type = Article
+\bibitem[{Lim et~al.(2024)}]{lim2024}
+\bibinfo{author}{Lim, W.M.}, et~al., \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{Generative ai in education: Balancing innovation and
+  integrity}.
+\newblock \bibinfo{journal}{Educational Research Review} \bibinfo{volume}{42},
+  \bibinfo{pages}{100567}.
+%Type = Article
+\bibitem[{OECD(2019)}]{oecd2019}
+\bibinfo{author}{OECD}, \bibinfo{year}{2019}.
+\newblock \bibinfo{title}{Recommendation of the council on artificial
+  intelligence}.
+\newblock \bibinfo{journal}{OECD Publishing} .
+%Type = Book
+\bibitem[{Piaget(1970)}]{piaget1970}
+\bibinfo{author}{Piaget, J.}, \bibinfo{year}{1970}.
+\newblock \bibinfo{title}{The science of education and the psychology of the
+  child}.
+\newblock \bibinfo{publisher}{Grossman}.
+%Type = Article
+\bibitem[{Ramírez~Chávez and Litardo~Caicedo(2025)}]{ramirezchavez2025}
+\bibinfo{author}{Ramírez~Chávez, A.}, \bibinfo{author}{Litardo~Caicedo, M.},
+  \bibinfo{year}{2025}.
+\newblock \bibinfo{title}{Ética y responsabilidad en el uso de inteligencia
+  artificial en la educación universitaria}.
+\newblock \bibinfo{journal}{Revista Digital de Investigación Educativa}
+  \bibinfo{volume}{12}, \bibinfo{pages}{1--18}.
+%Type = Misc
+\bibitem[{TecNM(2023)}]{tecnm2023}
+\bibinfo{author}{TecNM}, \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Reglamento de estudiantes del tecnológico nacional
+  de méxico}.
+\newblock \bibinfo{howpublished}{DOF}.
+%Type = Techreport
+\bibitem[{UNESCO(2021)}]{unesco2021}
+\bibinfo{author}{UNESCO}, \bibinfo{year}{2021}.
+\newblock \bibinfo{title}{Recommendation on the Ethics of Artificial
+  Intelligence}.
+\newblock \bibinfo{type}{Technical Report}. UNESCO.
+%Type = Article
+\bibitem[{Vaswani et~al.(2017)}]{vaswani2017}
+\bibinfo{author}{Vaswani, A.}, et~al., \bibinfo{year}{2017}.
+\newblock \bibinfo{title}{Attention is all you need}.
+\newblock \bibinfo{journal}{Advances in Neural Information Processing Systems}
+  \bibinfo{volume}{30}, \bibinfo{pages}{5998--6008}.
+%Type = Book
+\bibitem[{Vygotsky(1978)}]{vygotsky1978}
+\bibinfo{author}{Vygotsky, L.S.}, \bibinfo{year}{1978}.
+\newblock \bibinfo{title}{Mind in society: The development of higher
+  psychological processes}.
+\newblock \bibinfo{publisher}{Harvard University Press}.
+%Type = Article
+\bibitem[{Yan et~al.(2023)}]{yan2023}
+\bibinfo{author}{Yan, L.}, et~al., \bibinfo{year}{2023}.
+\newblock \bibinfo{title}{Ethical and technical challenges of large language
+  models in education: A systematic review}.
+\newblock \bibinfo{journal}{Computers \& Education} \bibinfo{volume}{198},
+  \bibinfo{pages}{104762}.
+
+\end{thebibliography}
